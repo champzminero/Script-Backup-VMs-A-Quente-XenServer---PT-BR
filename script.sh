@@ -40,6 +40,7 @@ fi
 data=`date +%c`
 echo >> $dir
 echo " 1- Criando Snapshot em ${data}" >> $dir
+xe vm-snapshot vm=$vmname new-name-label=${vmname}_${ano} > temp_${vmname}.txt 2>&1
 if [ $? -eq 0 ]
 then
         idvm=$(tail -n1 temp_${vmname}.txt)
