@@ -1,4 +1,4 @@
-# Script-Backup-VMs-XenServer---PT-BR
+# Script de Backup de VM a quente no XenServer---PT-BR
 
 # Esse Script tem como objetivo fazer o Backup das Maquinas Virtuais existentes no Hypervisor atraves de um Script feito em Bash.
 # No inicio do corpo do Script, o usuario deverá definir o nome da VM a ser feito o Backup e o UUID do Local Storage.
@@ -23,5 +23,7 @@
 
 # O Script irá criar um arquivo temporario para que ele possa armazenar a saida dos comandos e redirecionar isso para o STDOUT, já que ele precisará usar um hash que é gerado por # alguns comandos. Esses arquivos temporarios podem ser deletados antes e depois de concluido todo procedimento.
 # As saidas são redirecionadas para um arquivo de log que está dentro da variavel dir. Voce pode alterar o caminho para onde for de sua preferencia.
+# A variavel DIR irá armazenar o caminho para o qual os logs serão direcionados. Voce pode usar o que se encontra no Script, mas certifique-se de criar o diretorio.
+
 
 # Por fim, antes de colocar o Script em execução em suas VMs de produção, crie uma VM e teste para verificar se o funcionamento é o adequado para voce.
