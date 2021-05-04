@@ -81,7 +81,7 @@ then
         cvvm=$(tail -n1 temp_${vmname}.txt)
         echo "  [Ok] Template convertido em VM" >> $dir
 else
-        echo "  [Error] Aconteceu algo de errado! Verifique o log em $dir" >> $dir
+        echo "  [Erro!] Aconteceu algo de errado! Verifique o log em $dir" >> $dir
         echo "  Causa:" >> $dir
         cat temp_${vmname}.txt >> $dir
         xe vm-uninstall uuid=$idvm force=true >> /dev/null
