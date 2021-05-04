@@ -7,14 +7,14 @@
 ### As maquinas serão exportadas para um ponto de montagem de uma pasta na rede. Então é preciso configurar dentro do /etc/fstab ou de outra forma que preferir, a montagem da pasta # em que serão enviadas após a conclusão dos procedimentos. Caso queira criar o arquivo .XVA e coloca-lo em um HD ou coisa do tipo, voce pode passar o comando de montagem no inicio do Script e alterar a variavel p_montagem= indicando assim a pasta montada.
 
 ### Apos preencher os campos vmname= e storagebkp= (que não são passados por parametro, mas sim incluido dentro do Script), o Script irá prosseguir com os seguintes passos na seguinte ordem:
-#  Criação de pasta no ponto de montagem
-#  Criação de Snapshot
-#  Conversão do Snapshot em Template (Caso não consiga, apagará o Snapshot recem criado)
-#  Conversão do Template em VM (Caso não consiga, apagará o Snapshot recem criado)
-#  Exportando VM para SR na data atual (Caso nao consiga, apagara o Snapshot e o Template recem criado)
-#  Apaga o Snapshot 
-#  Apaga a VM e VDI
-#  Exclusão de Backups com mais de 3 DIAS
+###  Criação de pasta no ponto de montagem
+###  Criação de Snapshot
+### Conversão do Snapshot em Template (Caso não consiga, apagará o Snapshot recem criado)
+###  Conversão do Template em VM (Caso não consiga, apagará o Snapshot recem criado)
+###  Exportando VM para SR na data atual (Caso nao consiga, apagara o Snapshot e o Template recem criado)
+###  Apaga o Snapshot 
+###  Apaga a VM e VDI
+###  Exclusão de Backups com mais de 3 DIAS
 
 # IMPORTANTE ###
 # O vmname precisa receber o nome EXATAMENTE como está no XenCenter ou identificado dentro do XenServer. Se isso não for respeitado, o Script nao funcionará
