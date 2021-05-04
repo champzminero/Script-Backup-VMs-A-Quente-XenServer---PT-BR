@@ -148,7 +148,7 @@ fi
 data=`date +%c`
 echo >> $dir
 echo " Excluindo backups com mais de 3 DIAS em ${data}" >> $dir
-find $p_montagem/$vmname/* -mtime +3 -exec rm {} \;
+find $p_montagem/$vmname/* -mtime +3 -exec rm {} \; 2>&1
 if [ $? -eq 0 ];
 then
         echo "  [Ok] Arquivos excluidos." >> $dir
