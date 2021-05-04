@@ -23,4 +23,6 @@
 ### O Script irá criar um arquivo temporario para que ele possa armazenar a saida dos comandos e redirecionar isso para o STDOUT, já que ele precisará usar um hash que é gerado por alguns comandos. Esses arquivos temporarios podem ser deletados antes e depois de concluido todo procedimento.
 ### As saidas são redirecionadas para um arquivo de log que está dentro da variavel $dir. Voce pode alterar o caminho para onde for de sua preferencia ou usar o que se encontra no Script, mas certifique-se de criar o diretorio.
 
+# Em hipotese ALGUMA crie o ponto de montagem dentro de /root. Isso porque o XenServer destina 18GB para essa partição e usa ela para a paginação das VMs. Se essa partição ficar cheia, o funcionamento do XenServer ficará comprometido impedindo que as VMs trabalhem corretamente e voce terá muitas dores de cabeça.
+
 # Por fim, antes de colocar o Script em execução em suas VMs de produção, crie uma VM e teste para verificar se o funcionamento é o adequado para voce.
